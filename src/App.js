@@ -1,14 +1,12 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/HomePage";
+import { BrowserRouter, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUsPage";
+import HomePage from "./pages/HomePage";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" exact={true} element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-      </Routes>
+      <Route path="/" component={HomePage} />
+      <Route path="/about-us" component={AboutUs} />
     </BrowserRouter>
   );
 }

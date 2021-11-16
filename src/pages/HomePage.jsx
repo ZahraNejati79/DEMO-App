@@ -1,5 +1,5 @@
 import React from "react";
-const Home = (props) => {
+const HomePage = (props) => {
   return (
     <>
       <p>خانه</p>
@@ -7,4 +7,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default HomePage;
