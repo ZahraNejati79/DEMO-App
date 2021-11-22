@@ -1,4 +1,6 @@
-import { Link, NavLink, withRouter } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
+import styles from "./Navigation.module.css";
+
 const itams = [
   { name: "Home", to: "/", exact: true },
   { name: "About-Us", to: "/about-us" },
@@ -8,7 +10,7 @@ const itams = [
 const Navigation = ({ location }) => {
   return (
     <nav>
-      <ul>
+      <ul className={styles.ulList}>
         {itams.map((item) => {
           return (
             <li key={item.to}>
