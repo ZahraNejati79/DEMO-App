@@ -5,6 +5,7 @@ const itams = [
   { name: "Home", to: "/", exact: true },
   { name: "About-Us", to: "/about-us" },
   { name: "Profile", to: "/profile" },
+  { name: "Blogs", to: "/blogs" },
 ];
 
 const Navigation = ({ location }) => {
