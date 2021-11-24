@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 const Blogs = (props) => {
-  const id = props.match.params.id;
+  console.log(props);
+  const id = props.match.params.id || 1;
   // console.log(props.match.params.id);
   return (
     <>

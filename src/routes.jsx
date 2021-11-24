@@ -8,11 +8,11 @@ import PostPage from "./pages/PostPage";
 
 const routes = [
   { path: "/", component: HomePage, exact: true },
+  { path: "/post/:id?", component: PostPage },
   { path: "/about-us", component: AboutUs },
   { path: "/profile", component: Profile },
   { path: "/blogs/:id", component: Blogs },
   { path: "/blogs", component: BlogsPage },
-  { path: "/post/:id?", component: PostPage },
   { component: NotFound },
 ];
 export default routes;
